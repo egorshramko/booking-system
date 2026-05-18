@@ -1,0 +1,3 @@
+[submodule "booking-system-backend"]
+	path = booking-system-backend
+	url = https://github.com/egorshramko/booking-system-backend.git
