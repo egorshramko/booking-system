@@ -16,6 +16,7 @@ services:
       - "6432:5432"
     volumes:
       - booking-system-db-volume:/var/lib/postgresql/data
+      - ./booking-system-backend/src/main/resources/static/data:/tmp/data
     restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "pg_isready", "-d", "${POSTGRES_DB}"]
